@@ -1,0 +1,1230 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Agblega Yawa Winner | Développeur Full Stack & Coordinatrice Événementielle</title>
+<meta name="description" content="Portfolio professionnel d'Agblega Yawa Winner - Développeur Full Stack Python/Django/Laravel, Coordinatrice Événementielle, Innovatrice primée INTELLO 2026, Lomé, Togo.">
+<meta property="og:title" content="Agblega Yawa Winner | Développeur Full Stack & Coordinatrice Événementielle">
+<meta property="og:description" content="Portfolio professionnel - Full Stack Developer, Event Coordinator, Innovation Leader, Lomé, Togo.">
+<meta property="og:type" content="website">
+<meta name="keywords" content="développeur full stack, Django, Laravel, Python, coordinatrice événementielle, Lomé, Togo, innovation, INTELLO 2026, Mon Jardin">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+:root {
+  --bg: #0a0a0f;
+  --bg2: #111118;
+  --bg3: #18181f;
+  --card: #1c1c24;
+  --border: rgba(255,255,255,0.07);
+  --border2: rgba(255,255,255,0.12);
+  --text: #f0f0f5;
+  --text2: #9090a8;
+  --text3: #5a5a70;
+  --accent: #7c6af0;
+  --accent2: #a594f9;
+  --gold: #e8b84b;
+  --teal: #2dd4a0;
+  --coral: #f07a5a;
+  --radius: 14px;
+  --radius-sm: 8px;
+}
+.light-mode {
+  --bg: #d4d3d9;
+  --bg2: #ffffff;
+  --bg3: #ededf3;
+  --card: #ffffff;
+  --border: rgba(0,0,0,0.07);
+  --border2: rgba(0,0,0,0.13);
+  --text: #16161e;
+  --text2: #52526a;
+  --text3: #9999b0;
+  --accent: #5b4de0;
+  --accent2: #7c6af0;
+  --gold: #c9900a;
+  --teal: #0e9966;
+  --coral: #d05030;
+}
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; }
+body {
+  font-family: 'Inter', sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.6;
+  overflow-x: hidden;
+  transition: background 0.3s, color 0.3s;
+}
+h1,h2,h3,h4 { font-family: 'Syne', sans-serif; }
+
+/* ---- NAV ---- */
+nav {
+  position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+  display: flex; align-items: center; justify-content: space-between;
+  padding: 1rem 2rem;
+  background: rgba(10,10,15,0.85);
+  backdrop-filter: blur(20px);
+  border-bottom: 1px solid var(--border);
+  transition: background 0.3s;
+}
+.light-mode nav { background: rgba(245,244,248,0.90); }
+.nav-logo { font-family: 'Syne', sans-serif; font-weight: 800; font-size: 1.1rem; color: var(--text); letter-spacing: -0.02em; }
+.nav-logo span { color: var(--accent2); }
+.nav-links { display: flex; gap: 2rem; list-style: none; }
+.nav-links a { color: var(--text2); text-decoration: none; font-size: 0.875rem; font-weight: 500; transition: color 0.2s; }
+.nav-links a:hover { color: var(--text); }
+.nav-right { display: flex; align-items: center; gap: 1rem; }
+.theme-btn {
+  background: var(--card); border: 1px solid var(--border2);
+  color: var(--text2); cursor: pointer; border-radius: 50%;
+  width: 36px; height: 36px; display: flex; align-items: center; justify-content: center;
+  font-size: 1rem; transition: all 0.2s;
+}
+.theme-btn:hover { border-color: var(--accent); color: var(--accent2); }
+.btn-cv {
+  background: var(--accent); color: #fff; border: none; padding: 0.5rem 1.25rem;
+  border-radius: 50px; font-size: 0.8rem; font-weight: 600; cursor: pointer;
+  text-decoration: none; letter-spacing: 0.02em; transition: opacity 0.2s;
+}
+.btn-cv:hover { opacity: 0.85; }
+.hamburger { display: none; flex-direction: column; gap: 5px; cursor: pointer; background: none; border: none; }
+.hamburger span { width: 22px; height: 2px; background: var(--text); border-radius: 2px; transition: 0.3s; }
+
+/* ---- HERO ---- */
+.hero {
+  min-height: 100vh; display: flex; align-items: center; justify-content: center;
+  padding: 8rem 2rem 4rem;
+  position: relative; overflow: hidden;
+}
+.hero-bg {
+  position: absolute; inset: 0; pointer-events: none;
+  background: radial-gradient(ellipse 80% 60% at 50% 0%, rgba(124,106,240,0.12) 0%, transparent 70%);
+}
+.hero-orb {
+  position: absolute; border-radius: 50%; filter: blur(80px); pointer-events: none;
+}
+.orb1 { width: 500px; height: 500px; background: rgba(124,106,240,0.08); top: -100px; right: -100px; }
+.orb2 { width: 300px; height: 300px; background: rgba(45,212,160,0.06); bottom: 0; left: -50px; }
+.hero-inner { max-width: 900px; text-align: center; position: relative; z-index: 1; }
+.hero-badge {
+  display: inline-flex; align-items: center; gap: 0.5rem;
+  background: rgba(124,106,240,0.12); border: 1px solid rgba(124,106,240,0.25);
+  border-radius: 50px; padding: 0.4rem 1rem; font-size: 0.8rem; font-weight: 500;
+  color: var(--accent2); margin-bottom: 2rem;
+}
+.badge-dot { width: 6px; height: 6px; background: var(--teal); border-radius: 50%; animation: pulse 2s infinite; }
+@keyframes pulse { 0%,100%{opacity:1;transform:scale(1);} 50%{opacity:0.6;transform:scale(1.3);} }
+.photo-placeholder {
+  width: 130px; height: 130px; border-radius: 50%;
+  background: var(--bg3); border: 2px solid var(--border2);
+  margin: 0 auto 2rem;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 2.5rem; color: var(--text3); overflow: hidden;
+  position: relative;
+}
+.photo-placeholder img { width: 100%; height: 100%; object-fit: cover; border-radius: 50%; }
+.photo-ring {
+  position: absolute; inset: -8px; border-radius: 50%;
+  border: 2px solid transparent;
+  background: linear-gradient(var(--bg), var(--bg)) padding-box,
+              linear-gradient(135deg, var(--accent), var(--teal)) border-box;
+  animation: spin 8s linear infinite;
+}
+@keyframes spin { to { transform: rotate(360deg); } }
+h1.hero-name {
+  font-size: clamp(2.5rem, 6vw, 4.5rem); font-weight: 800;
+  letter-spacing: -0.03em; line-height: 1.05; margin-bottom: 0.5rem;
+}
+.hero-name .first { color: var(--text); }
+.hero-name .last { color: var(--accent2); }
+.hero-title {
+  font-size: clamp(1rem, 2vw, 1.2rem); color: var(--text2);
+  font-weight: 400; margin-bottom: 1.5rem; letter-spacing: 0.01em;
+}
+.hero-title strong { color: var(--text); font-weight: 500; }
+.hero-desc {
+  font-size: 1rem; color: var(--text2); max-width: 600px; margin: 0 auto 2.5rem;
+  line-height: 1.7;
+}
+.hero-btns { display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; margin-bottom: 3rem; }
+.btn-primary {
+  background: var(--accent); color: #fff; padding: 0.85rem 2rem;
+  border-radius: 50px; font-weight: 600; font-size: 0.9rem; text-decoration: none;
+  transition: all 0.2s; border: none; cursor: pointer; letter-spacing: 0.02em;
+}
+.btn-primary:hover { opacity: 0.85; transform: translateY(-1px); }
+.btn-outline {
+  background: transparent; color: var(--text); padding: 0.85rem 2rem;
+  border: 1px solid var(--border2); border-radius: 50px; font-weight: 500;
+  font-size: 0.9rem; text-decoration: none; transition: all 0.2s;
+}
+.btn-outline:hover { border-color: var(--accent); color: var(--accent2); transform: translateY(-1px); }
+.hero-socials { display: flex; gap: 1rem; justify-content: center; }
+.social-link {
+  width: 40px; height: 40px; border-radius: 50%;
+  border: 1px solid var(--border2); display: flex; align-items: center; justify-content: center;
+  text-decoration: none; color: var(--text2); font-size: 1rem; transition: all 0.2s;
+}
+.social-link:hover { border-color: var(--accent); color: var(--accent2); transform: translateY(-2px); }
+.hero-scroll { position: absolute; bottom: 2rem; left: 50%; transform: translateX(-50%); animation: bounce 2s infinite; }
+.hero-scroll span { display: block; width: 20px; height: 20px; border-right: 2px solid var(--text3); border-bottom: 2px solid var(--text3); transform: rotate(45deg); }
+@keyframes bounce { 0%,100%{transform:translateX(-50%) translateY(0);} 50%{transform:translateX(-50%) translateY(6px);} }
+
+/* ---- SECTIONS ---- */
+section { padding: 6rem 2rem; }
+.section-inner { max-width: 1100px; margin: 0 auto; }
+.section-tag {
+  display: inline-block; font-size: 0.75rem; font-weight: 600; letter-spacing: 0.1em;
+  text-transform: uppercase; color: var(--accent2);
+  background: rgba(124,106,240,0.1); padding: 0.3rem 0.8rem; border-radius: 50px;
+  margin-bottom: 1rem;
+}
+.section-title {
+  font-size: clamp(1.8rem, 4vw, 2.8rem); font-weight: 800; letter-spacing: -0.02em;
+  line-height: 1.1; margin-bottom: 1rem;
+}
+.section-sub { color: var(--text2); font-size: 1rem; max-width: 500px; line-height: 1.6; }
+.section-header { margin-bottom: 3.5rem; }
+
+/* ---- ABOUT ---- */
+.about-grid { display: grid; grid-template-columns: 1fr 1.6fr; gap: 4rem; align-items: center; }
+.about-photo { position: relative; }
+.about-photo-frame {
+  width: 100%; aspect-ratio: 4/5; border-radius: 20px;
+  background: var(--bg3); border: 1px solid var(--border);
+  display: flex; align-items: center; justify-content: center;
+  font-size: 4rem; color: var(--text3); overflow: hidden;
+}
+.about-photo-frame img { width:100%; height:100%; object-fit: cover; border-radius: 20px; }
+.award-badge-float {
+  position: absolute; bottom: -1rem; right: -1rem;
+  background: var(--gold); color: #1a1000; padding: 0.75rem 1rem;
+  border-radius: 12px; font-weight: 700; font-size: 0.8rem;
+  box-shadow: 0 4px 20px rgba(232,184,75,0.3); line-height: 1.3;
+}
+.about-text p { color: var(--text2); font-size: 1rem; line-height: 1.75; margin-bottom: 1.25rem; }
+.about-text p strong { color: var(--text); }
+.about-tags { display: flex; flex-wrap: wrap; gap: 0.6rem; margin-top: 2rem; }
+.tag {
+  font-size: 0.8rem; padding: 0.35rem 0.9rem; border-radius: 50px;
+  border: 1px solid var(--border2); color: var(--text2); background: var(--card);
+}
+
+/* ---- STATS ---- */
+.stats-section { background: var(--bg2); border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); }
+.stats-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); gap: 0; }
+.stat-item {
+  padding: 2.5rem 2rem; text-align: center;
+  border-right: 1px solid var(--border);
+}
+.stat-item:last-child { border-right: none; }
+.stat-number { font-family: 'Syne', sans-serif; font-size: 2.5rem; font-weight: 800; color: var(--text); line-height: 1; margin-bottom: 0.4rem; }
+.stat-number .accent { color: var(--accent2); }
+.stat-label { font-size: 0.8rem; color: var(--text3); font-weight: 500; letter-spacing: 0.02em; }
+
+/* ---- SKILLS ---- */
+.skills-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; }
+.skills-card { background: var(--card); border: 1px solid var(--border); border-radius: var(--radius); padding: 2rem; }
+.skills-card-title { font-size: 0.85rem; font-weight: 600; color: var(--text2); text-transform: uppercase; letter-spacing: 0.08em; margin-bottom: 1.5rem; }
+.skill-row { margin-bottom: 1.2rem; }
+.skill-row-top { display: flex; justify-content: space-between; margin-bottom: 0.4rem; }
+.skill-name { font-size: 0.875rem; font-weight: 500; color: var(--text); }
+.skill-pct { font-size: 0.75rem; color: var(--text3); }
+.skill-bar { height: 4px; background: var(--bg3); border-radius: 2px; overflow: hidden; }
+.skill-fill { height: 100%; border-radius: 2px; background: linear-gradient(90deg, var(--accent), var(--accent2)); transition: width 1.2s cubic-bezier(0.22,1,0.36,1); }
+.soft-skills { display: flex; flex-wrap: wrap; gap: 0.6rem; }
+.soft-tag {
+  font-size: 0.8rem; padding: 0.4rem 0.9rem; border-radius: 50px;
+  background: rgba(124,106,240,0.1); color: var(--accent2);
+  border: 1px solid rgba(124,106,240,0.2);
+}
+
+/* ---- PROJECTS ---- */
+.projects-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 1.5rem; }
+.project-card {
+  background: var(--card); border: 1px solid var(--border); border-radius: var(--radius);
+  overflow: hidden; transition: border-color 0.2s, transform 0.2s;
+}
+.project-card:hover { border-color: var(--accent); transform: translateY(-3px); }
+.project-card.featured { grid-column: 1 / -1; display: grid; grid-template-columns: 1fr 1fr; }
+.project-img {
+  aspect-ratio: 16/9; background: var(--bg3);
+  display: flex; align-items: center; justify-content: center;
+  font-size: 3rem; color: var(--text3); position: relative; overflow: hidden;
+}
+.project-card.featured .project-img { aspect-ratio: unset; min-height: 280px; }
+.project-img-bg { position: absolute; inset: 0; }
+.project-img-bg.green { background: linear-gradient(135deg, rgba(45,212,160,0.15), rgba(45,212,160,0.03)); }
+.project-img-bg.purple { background: linear-gradient(135deg, rgba(124,106,240,0.15), rgba(124,106,240,0.03)); }
+.project-img-bg.coral { background: linear-gradient(135deg, rgba(240,122,90,0.15), rgba(240,122,90,0.03)); }
+.project-img-bg.blue { background: linear-gradient(135deg, rgba(56,130,246,0.15), rgba(56,130,246,0.03)); }
+.project-icon { font-size: 3.5rem; position: relative; z-index: 1; }
+.prize-ribbon {
+  position: absolute; top: 1rem; left: 1rem; z-index: 2;
+  background: var(--gold); color: #1a1000; font-size: 0.7rem; font-weight: 700;
+  padding: 0.3rem 0.7rem; border-radius: 50px; letter-spacing: 0.05em;
+}
+.project-body { padding: 1.5rem; }
+.project-meta { display: flex; gap: 0.5rem; margin-bottom: 0.75rem; flex-wrap: wrap; }
+.project-meta .tag { font-size: 0.72rem; padding: 0.25rem 0.65rem; }
+.project-tag-tech { background: rgba(45,212,160,0.1); color: var(--teal); border-color: rgba(45,212,160,0.2); }
+.project-title { font-size: 1.15rem; font-weight: 700; margin-bottom: 0.6rem; color: var(--text); }
+.project-desc { font-size: 0.875rem; color: var(--text2); line-height: 1.65; margin-bottom: 1rem; }
+.project-role { font-size: 0.8rem; color: var(--text3); margin-bottom: 1rem; }
+.project-role strong { color: var(--text2); }
+.project-links { display: flex; gap: 0.75rem; }
+.project-link {
+  font-size: 0.8rem; font-weight: 500; text-decoration: none; padding: 0.4rem 0.9rem;
+  border-radius: 50px; border: 1px solid var(--border2); color: var(--text2); transition: all 0.2s;
+}
+.project-link:hover { border-color: var(--accent); color: var(--accent2); }
+
+/* ---- EXPERIENCE ---- */
+.exp-tabs { display: flex; gap: 0.5rem; margin-bottom: 2.5rem; flex-wrap: wrap; }
+.exp-tab {
+  padding: 0.5rem 1.2rem; border-radius: 50px; font-size: 0.8rem; font-weight: 500;
+  border: 1px solid var(--border2); background: transparent; color: var(--text2);
+  cursor: pointer; transition: all 0.2s;
+}
+.exp-tab.active { background: var(--accent); color: #fff; border-color: var(--accent); }
+.exp-tab:hover:not(.active) { border-color: var(--accent); color: var(--accent2); }
+.exp-panel { display: none; }
+.exp-panel.active { display: block; }
+.timeline { position: relative; padding-left: 2rem; }
+.timeline::before {
+  content: ''; position: absolute; left: 0; top: 0; bottom: 0;
+  width: 1px; background: var(--border2);
+}
+.timeline-item { position: relative; margin-bottom: 2.5rem; }
+.timeline-dot {
+  position: absolute; left: -2rem; top: 0.3rem;
+  width: 10px; height: 10px; border-radius: 50%;
+  background: var(--accent); border: 2px solid var(--bg);
+  transform: translateX(-4.5px);
+}
+.timeline-dot.gold { background: var(--gold); }
+.tl-date { font-size: 0.75rem; color: var(--text3); font-weight: 500; margin-bottom: 0.3rem; letter-spacing: 0.05em; }
+.tl-title { font-size: 1.05rem; font-weight: 700; color: var(--text); margin-bottom: 0.15rem; }
+.tl-company { font-size: 0.85rem; color: var(--accent2); font-weight: 500; margin-bottom: 0.75rem; }
+.tl-list { list-style: none; }
+.tl-list li { font-size: 0.875rem; color: var(--text2); line-height: 1.6; padding: 0.2rem 0 0.2rem 1rem; position: relative; }
+.tl-list li::before { content: '→'; position: absolute; left: 0; color: var(--accent2); font-size: 0.75rem; top: 0.3rem; }
+
+/* ---- FORMATION ---- */
+.formation-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem; }
+.formation-card {
+  background: var(--card); border: 1px solid var(--border); border-radius: var(--radius); padding: 1.75rem;
+}
+.formation-icon { font-size: 2rem; margin-bottom: 1rem; }
+.formation-degree { font-size: 1rem; font-weight: 700; color: var(--text); margin-bottom: 0.25rem; }
+.formation-school { font-size: 0.875rem; color: var(--accent2); font-weight: 500; margin-bottom: 0.25rem; }
+.formation-date { font-size: 0.8rem; color: var(--text3); }
+
+/* ---- CERTIFICATIONS ---- */
+.cert-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 1.5rem; }
+.cert-card {
+  background: var(--card); border: 1px solid var(--border); border-radius: var(--radius); padding: 1.5rem;
+  display: flex; gap: 1rem; align-items: flex-start; transition: border-color 0.2s;
+}
+.cert-card:hover { border-color: var(--border2); }
+.cert-logo {
+  width: 44px; height: 44px; border-radius: 10px; background: var(--bg3);
+  display: flex; align-items: center; justify-content: center;
+  font-size: 1.3rem; flex-shrink: 0; border: 1px solid var(--border);
+}
+.cert-info .cert-name { font-size: 0.9rem; font-weight: 600; color: var(--text); margin-bottom: 0.2rem; }
+.cert-info .cert-issuer { font-size: 0.78rem; color: var(--text3); margin-bottom: 0.5rem; }
+.cert-info .cert-skills { font-size: 0.75rem; color: var(--text2); line-height: 1.5; }
+.cert-planned { opacity: 0.6; }
+.cert-badge { font-size: 0.65rem; padding: 0.2rem 0.5rem; border-radius: 50px; font-weight: 600; }
+.cert-badge.planned { background: rgba(240,122,90,0.1); color: var(--coral); border: 1px solid rgba(240,122,90,0.2); }
+.cert-badge.obtained { background: rgba(45,212,160,0.1); color: var(--teal); border: 1px solid rgba(45,212,160,0.2); }
+
+/* ---- TESTIMONIALS ---- */
+.testi-section { background: var(--bg2); border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); }
+.testi-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1.5rem; }
+.testi-card {
+  background: var(--card); border: 1px solid var(--border); border-radius: var(--radius); padding: 1.75rem;
+}
+.testi-quote { font-size: 2rem; color: var(--accent); line-height: 1; margin-bottom: 1rem; font-family: Georgia, serif; }
+.testi-text { font-size: 0.9rem; color: var(--text2); line-height: 1.7; margin-bottom: 1.5rem; font-style: italic; }
+.testi-author { display: flex; align-items: center; gap: 0.75rem; }
+.testi-avatar {
+  width: 38px; height: 38px; border-radius: 50%; background: var(--bg3);
+  display: flex; align-items: center; justify-content: center; font-size: 0.85rem;
+  font-weight: 600; color: var(--text2); flex-shrink: 0;
+}
+.testi-name { font-size: 0.875rem; font-weight: 600; color: var(--text); }
+.testi-role { font-size: 0.75rem; color: var(--text3); }
+
+/* ---- GALLERY ---- */
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+}
+.gallery-item {
+  border-radius: var(--radius-sm); overflow: hidden;
+  background: var(--bg3); border: 1px solid var(--border);
+  aspect-ratio: 4/3;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 2rem; color: var(--text3); position: relative;
+  transition: border-color 0.2s;
+}
+.gallery-item:hover { border-color: var(--border2); }
+.gallery-item:first-child { grid-row: span 2; aspect-ratio: unset; min-height: 300px; }
+.gallery-label {
+  position: absolute; bottom: 0; left: 0; right: 0;
+  background: linear-gradient(transparent, rgba(0,0,0,0.7)); padding: 1.5rem 1rem 0.75rem;
+  font-size: 0.75rem; color: rgba(255,255,255,0.8); font-weight: 500;
+}
+
+/* ---- CONTACT ---- */
+.contact-grid { display: grid; grid-template-columns: 1fr 1.5fr; gap: 4rem; }
+.contact-info p { font-size: 0.9rem; color: var(--text2); line-height: 1.7; margin-bottom: 2rem; }
+.contact-links { display: flex; flex-direction: column; gap: 1rem; }
+.contact-link-item {
+  display: flex; align-items: center; gap: 1rem;
+  padding: 1rem 1.25rem; background: var(--card); border: 1px solid var(--border);
+  border-radius: var(--radius-sm); text-decoration: none; transition: border-color 0.2s;
+  color: var(--text);
+}
+.contact-link-item:hover { border-color: var(--accent); }
+.contact-link-icon {
+  width: 38px; height: 38px; border-radius: 8px; background: var(--bg3);
+  display: flex; align-items: center; justify-content: center; font-size: 1rem; flex-shrink: 0;
+}
+.contact-link-text .cl-label { font-size: 0.7rem; color: var(--text3); text-transform: uppercase; letter-spacing: 0.06em; margin-bottom: 0.1rem; }
+.contact-link-text .cl-value { font-size: 0.875rem; font-weight: 500; color: var(--text); }
+.contact-form-card { background: var(--card); border: 1px solid var(--border); border-radius: var(--radius); padding: 2rem; }
+.form-title { font-size: 1.1rem; font-weight: 700; margin-bottom: 1.5rem; color: var(--text); }
+.form-group { margin-bottom: 1rem; }
+.form-group label { font-size: 0.8rem; font-weight: 500; color: var(--text2); display: block; margin-bottom: 0.4rem; }
+.form-group input, .form-group select, .form-group textarea {
+  width: 100%; background: var(--bg2); border: 1px solid var(--border2); border-radius: var(--radius-sm);
+  padding: 0.75rem 1rem; font-size: 0.875rem; color: var(--text); font-family: 'Inter', sans-serif;
+  transition: border-color 0.2s; outline: none;
+}
+.form-group input:focus, .form-group select:focus, .form-group textarea:focus { border-color: var(--accent); }
+.form-group textarea { resize: vertical; min-height: 120px; }
+.form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; }
+.form-submit {
+  width: 100%; background: var(--accent); color: #fff; border: none; padding: 0.9rem;
+  border-radius: var(--radius-sm); font-size: 0.9rem; font-weight: 600; cursor: pointer;
+  transition: opacity 0.2s; margin-top: 0.5rem; letter-spacing: 0.02em;
+}
+.form-submit:hover { opacity: 0.85; }
+
+/* ---- FOOTER ---- */
+footer {
+  border-top: 1px solid var(--border); padding: 2rem;
+  text-align: center; font-size: 0.8rem; color: var(--text3);
+}
+footer a { color: var(--accent2); text-decoration: none; }
+
+/* ---- ANIMATIONS ---- */
+.fade-up { opacity: 0; transform: translateY(20px); transition: opacity 0.6s ease, transform 0.6s ease; }
+.fade-up.visible { opacity: 1; transform: translateY(0); }
+
+/* ---- RESPONSIVE ---- */
+@media (max-width: 768px) {
+  .nav-links { display: none; }
+  .nav-links.open { display: flex; flex-direction: column; position: absolute; top: 100%; left: 0; right: 0; background: var(--bg2); border-bottom: 1px solid var(--border); padding: 1rem 2rem; gap: 1rem; }
+  .hamburger { display: flex; }
+  .about-grid { grid-template-columns: 1fr; }
+  .about-photo { max-width: 300px; margin: 0 auto; }
+  .skills-grid { grid-template-columns: 1fr; }
+  .contact-grid { grid-template-columns: 1fr; }
+  .project-card.featured { grid-template-columns: 1fr; }
+  .gallery-grid { grid-template-columns: repeat(2, 1fr); }
+  .gallery-item:first-child { grid-row: span 1; }
+  .stat-item { border-right: none; border-bottom: 1px solid var(--border); }
+  section { padding: 4rem 1.25rem; }
+  .form-row { grid-template-columns: 1fr; }
+}
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav id="navbar">
+  <div class="nav-logo">W<span>.</span>AGBLEGA</div>
+  <ul class="nav-links" id="navLinks">
+    <li><a href="#about">À propos</a></li>
+    <li><a href="#skills">Compétences</a></li>
+    <li><a href="#projects">Projets</a></li>
+    <li><a href="#experience">Expériences</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+  <div class="nav-right">
+    <button class="theme-btn" id="themeBtn" title="Changer le thème">☀️</button>
+    <a href="#" class="btn-cv" download>📄 CV</a>
+    <button class="hamburger" id="hamburger" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero" id="home">
+  <div class="hero-bg"></div>
+  <div class="hero-orb orb1"></div>
+  <div class="hero-orb orb2"></div>
+  <div class="hero-inner">
+    <div class="photo-placeholder" id="heroPhoto">
+      <div class="photo-ring"></div>
+      <span style="position:relative;z-index:1;">👩🏾‍💻</span>
+    </div>
+    <h1 class="hero-name">
+      <span class="first">Agblega Yawa </span><span class="last">Winner</span>
+    </h1>
+    <p class="hero-title">
+      <strong>Développeur Full Stack</strong> · Coordinatrice Événementielle · Hôtesse d'accueil
+    </p>
+    <p class="hero-desc">
+      Passionnée de technologie et d'innovation, je conçois des solutions web robustes tout en coordonnant des événements impactants.
+    </p>
+    <div class="hero-btns">
+      <a href="#projects" class="btn-primary">🚀 Voir mes projets</a>
+      <a href="#contact" class="btn-outline">✉️ Me contacter</a>
+    </div>
+    <div class="hero-socials">
+      <a href="https://www.linkedin.com/in/agblega-yawa-winner-880362297/" class="social-link" title="LinkedIn" target="_blank">in</a>
+      <a href="https://github.com/agblega-winner" class="social-link" title="GitHub" target="_blank">⌥</a>
+      <a href="mailto:agblegayawawinner@gmail.com" class="social-link" title="Email">@</a>
+      <a href="https://wa.me/22871110585" class="social-link" title="WhatsApp" target="_blank">💬</a>
+    </div>
+  </div>
+  <div class="hero-scroll"><span></span></div>
+</section>
+
+<!-- STATS -->
+<section class="stats-section">
+  <div class="section-inner">
+    <div class="stats-grid">
+      <div class="stat-item fade-up">
+        <div class="stat-number"><span class="counter" data-target="4">0</span><span class="accent">+</span></div>
+        <div class="stat-label">Projets réalisés</div>
+      </div>
+      <div class="stat-item fade-up">
+        <div class="stat-number"><span class="counter" data-target="10">0</span></div>
+        <div class="stat-label">Membres d'équipe dirigés</div>
+      </div>
+      <div class="stat-item fade-up">
+        <div class="stat-number"><span class="counter" data-target="44">0</span></div>
+        <div class="stat-label">Équipes battues à INTELLO</div>
+      </div>
+      <div class="stat-item fade-up">
+        <div class="stat-number"><span class="counter" data-target="6">0</span><span class="accent">+</span></div>
+        <div class="stat-label">Technologies maîtrisées</div>
+      </div>
+      <div class="stat-item fade-up">
+        <div class="stat-number"><span class="counter" data-target="500">0</span><span class="accent">K</span></div>
+        <div class="stat-label">FCFA financés (Mon Jardin)</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about">
+  <div class="section-inner">
+    <div class="about-grid fade-up">
+      <div class="about-photo">
+        <div class="about-photo-frame" id="aboutPhoto">
+          <span>👩🏾</span>
+        </div>
+        <div class="award-badge-float">🏆 1ère Place<br>INTELLO 2026</div>
+      </div>
+      <div class="about-text">
+        <div class="section-header">
+          <span class="section-tag">À propos de moi</span>
+          <h2 class="section-title">Technique. Créative.<br>Orientée impact.</h2>
+        </div>
+        <p>Je suis <strong>Agblega Yawa Winner</strong>, développeur Full Stack et coordinatrice événementielle basée à Lomé, Togo. Actuellement en Bachelor 3 Systèmes d'Information à Lomé Business School, je combine une solide expertise technique avec une capacité rare à orchestrer des projets humains complexes.</p>
+        <p>En juin 2026, mon équipe et moi avons remporté <strong>la 1ère place au concours INTELLO 2026</strong> parmi 44 équipes participantes, avec <em>Mon Jardin</em> - un système d'agriculture verticale low-tech innovant conçu pour les ménages et maraîchers urbains togolais, avec 500 000 FCFA de financement pour la phase pilote.</p>
+        <p>Présidente du club d'art oratoire de LBS, ex-coordinatrice chez NBBC Solution, et hôtesse professionnelle formée à Tilda's Event Academy ; je crois que la technologie et l'humain ne s'opposent pas, ils se complètent.</p>
+        <p>Mon objectif : rejoindre un environnement professionnel pour concilier <strong>gestion de projet, développement produit et innovation sociale</strong>.</p>
+        <div class="about-tags">
+          <span class="tag">🐍 Python / Django</span>
+          <span class="tag">🌿 Laravel / PHP</span>
+          <span class="tag">⚡ JavaScript</span>
+          <span class="tag">📊 Agile / Scrum</span>
+          <span class="tag">🎤 Art oratoire</span>
+          <span class="tag">🌍 Commerce international</span>
+          <span class="tag">🤝 Leadership</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SKILLS -->
+<section id="skills" style="background: var(--bg2); border-top: 1px solid var(--border);">
+  <div class="section-inner">
+    <div class="section-header fade-up">
+      <span class="section-tag">Compétences</span>
+      <h2 class="section-title">Compétences techniques</h2>
+      <p class="section-sub">Un profil hybride entre développement, gestion de projet et communication professionnelle.</p>
+    </div>
+    <div class="skills-grid">
+      <div class="skills-card fade-up">
+        <div class="skills-card-title"> Compétences techniques</div>
+        <div class="skill-row">
+          <div class="skill-row-top"><span class="skill-name">Python / Django</span><span class="skill-pct">85%</span></div>
+          <div class="skill-bar"><div class="skill-fill" data-width="85%" style="width:0"></div></div>
+        </div>
+        <div class="skill-row">
+          <div class="skill-row-top"><span class="skill-name">PHP / Laravel</span><span class="skill-pct">80%</span></div>
+          <div class="skill-bar"><div class="skill-fill" data-width="80%" style="width:0"></div></div>
+        </div>
+        <div class="skill-row">
+          <div class="skill-row-top"><span class="skill-name">JavaScript</span><span class="skill-pct">70%</span></div>
+          <div class="skill-bar"><div class="skill-fill" data-width="70%" style="width:0"></div></div>
+        </div>
+        <div class="skill-row">
+          <div class="skill-row-top"><span class="skill-name">MySQL / PostgreSQL</span><span class="skill-pct">78%</span></div>
+          <div class="skill-bar"><div class="skill-fill" data-width="78%" style="width:0"></div></div>
+        </div>
+        <div class="skill-row">
+          <div class="skill-row-top"><span class="skill-name">Git / GitHub / GitLab</span><span class="skill-pct">82%</span></div>
+          <div class="skill-bar"><div class="skill-fill" data-width="82%" style="width:0"></div></div>
+        </div>
+        <div class="skill-row">
+          <div class="skill-row-top"><span class="skill-name">REST APIs</span><span class="skill-pct">75%</span></div>
+          <div class="skill-bar"><div class="skill-fill" data-width="75%" style="width:0"></div></div>
+        </div>
+        <div class="skill-row">
+          <div class="skill-row-top"><span class="skill-name">Tests fonctionnels & QA</span><span class="skill-pct">72%</span></div>
+          <div class="skill-bar"><div class="skill-fill" data-width="72%" style="width:0"></div></div>
+        </div>
+      </div>
+      <div class="skills-card fade-up">
+        <div class="skills-card-title"> Compétences transversales</div>
+        <div class="soft-skills">
+          <span class="soft-tag">Leadership stratégique</span>
+          <span class="soft-tag">Gestion de projet Agile</span>
+          <span class="soft-tag">Coordination d'équipes multidisciplinaires</span>
+          <span class="soft-tag">Communication & prise de parole</span>
+          <span class="soft-tag">Prise de parole publique</span>
+          <span class="soft-tag">Gestion logistique</span>
+          <span class="soft-tag">Organisation événementiellel</span>
+          <span class="soft-tag">Innovation & entrepreneuriat</span>
+          <span class="soft-tag">Résolution de problèmes </span>
+          <span class="soft-tag">Commerce international</span>
+          <span class="soft-tag">Négociation</span>
+          <span class="soft-tag">Environnements multiculturels</span>
+        </div>
+        <div style="margin-top:2rem;">
+          <div class="skills-card-title">🌍 Langues</div>
+          <div class="skill-row" style="margin-top:1rem">
+            <div class="skill-row-top"><span class="skill-name">Éwé</span><span class="skill-pct">Langue maternelle</span></div>
+            <div class="skill-bar"><div class="skill-fill" data-width="100%" style="width:0;background:linear-gradient(90deg,var(--teal),#1dd4a0)"></div></div>
+          </div>
+          <div class="skill-row">
+            <div class="skill-row-top"><span class="skill-name">Français</span><span class="skill-pct">Excellent (C2)</span></div>
+            <div class="skill-bar"><div class="skill-fill" data-width="98%" style="width:0;background:linear-gradient(90deg,var(--teal),#1dd4a0)"></div></div>
+          </div>
+          <div class="skill-row">
+            <div class="skill-row-top"><span class="skill-name">Anglais</span><span class="skill-pct">Intermédiaire (B1)</span></div>
+            <div class="skill-bar"><div class="skill-fill" data-width="50%" style="width:0"></div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects">
+  <div class="section-inner">
+    <div class="section-header fade-up">
+      <span class="section-tag">Projets</span>
+      <h2 class="section-title">Ce que j'ai réalisé</h2>
+      <p class="section-sub">Des projets concrets, du hackathon à la production, avec impact mesurable.</p>
+    </div>
+    <div class="projects-grid">
+
+      <!-- MON JARDIN - FEATURED -->
+      <div class="project-card featured fade-up">
+        <div class="project-img">
+          <div class="project-img-bg green"></div>
+          <div class="prize-ribbon">🥇 1ère Place INTELLO 2026</div>
+          <div class="project-icon">🌱</div>
+        </div>
+        <div class="project-body">
+          <div class="project-meta">
+            <span class="tag project-tag-tech">Agri-tech</span>
+            <span class="tag project-tag-tech">Low-tech</span>
+            <span class="tag project-tag-tech">Innovation sociale</span>
+            <span class="tag project-tag-tech">Juin 2026</span>
+          </div>
+          <h3 class="project-title">Mon Jardin : Agriculture Verticale Low-Tech</h3>
+          <p class="project-desc">Système d'agriculture verticale à faible coût conçu pour les ménages urbains et maraîchers du Togo. Structure en bambou local, substrat organique, irrigation semi-automatisée par gravité. Permet une production alimentaire en espace réduit,avec un ROI positif en moins de 6 mois.</p>
+          <p class="project-role"><strong>Mon rôle :</strong> Leader l'équipe de 10 membres multidisciplinaire , conception du prototype, modèle économique, étude de marché et pitch devant jury professionnel. Financement obtenu : 500 000 FCFA pour la phase pilote.</p>
+          <div class="project-links">
+            <a href="#contact" class="project-link">📩 En savoir plus</a>
+          </div>
+        </div>
+      </div>
+      <div class="timeline-item fade-up">
+  <div class="timeline-dot gold"></div>
+  <div class="tl-date">JUIN 2026</div>
+  <div class="tl-title">Responsable rubrique "Eloq Me" - INTELLO 2026</div>
+  <div class="tl-company">Lomé Business School · Art Oratoire</div>
+  <ul class="tl-list">
+    <li>Conception et organisation complète de la rubrique d'art oratoire de A à Z</li>
+    <li>Recherche et sélection des jurés pour chaque phase de la compétition</li>
+    <li>Élaboration des thèmes de toutes les épreuves, des qualifications jusqu'à la finale</li>
+    <li>Pilotage du déroulement des rounds et coordination logistique en temps réel</li>
+    <li>Supervision de l'ensemble des participants jusqu'à la remise des prix finaux</li>
+  </ul>
+</div>
+      <!-- CROWDFUNDING -->
+      <div class="project-card fade-up">
+        <div class="project-img">
+          <div class="project-img-bg purple"></div>
+          <div class="project-icon">💰</div>
+        </div>
+        <div class="project-body">
+          <div class="project-meta">
+            <span class="tag project-tag-tech">Django</span>
+            <span class="tag project-tag-tech">Python</span>
+            <span class="tag project-tag-tech">PostGreSQL</span>
+          </div>
+          <h3 class="project-title">Plateforme de Crowdfunding</h3>
+          <p class="project-desc">Application web de financement participatif avec authentification sécurisée, gestion des contributions en temps réel, suivi des transactions. Backend Django robuste avec modèles de données optimisés.</p>
+          <p class="project-role"><strong>Mon rôle :</strong> Développeur full-stack : architecture backend, authentification, suivi des dons en temps réel.</p>
+          <div class="project-links">
+            <a href="https://github.com/agblega-winner" class="project-link" target="_blank">⌥ GitHub</a>
+            <a href="#" class="project-link">🔗 Demo</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- ARCHIPEL -->
+      <div class="project-card fade-up">
+        <div class="project-img">
+          <div class="project-img-bg blue"></div>
+          <div class="project-icon">🌐</div>
+        </div>
+        <div class="project-body">
+          <div class="project-meta">
+            <span class="tag project-tag-tech">Réseau LAN</span>
+            <span class="tag project-tag-tech">Peer-to-peer</span>
+            <span class="tag project-tag-tech">Hackathon</span>
+          </div>
+          <h3 class="project-title">Projet Archipel - Infrastructure LAN</h3>
+          <p class="project-desc">Infrastructure réseau local permettant le partage de fichiers entre machines sans connexion Internet. Communication peer-to-peer optimisée. Réalisé en méthodologie Agile au Hackathon "La Piscine".</p>
+          <p class="project-role"><strong>Mon rôle :</strong> Conception, implémentation réseau, coordination Agile (sprints), revues de code.</p>
+          <div class="project-links">
+            <a href="#" class="project-link">📁 Détails</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- QA AGENCE TOGO DIGITAL -->
+      <div class="project-card fade-up">
+        <div class="project-img">
+          <div class="project-img-bg coral"></div>
+          <div class="project-icon">🔍</div>
+        </div>
+        <div class="project-body">
+          <div class="project-meta">
+            <span class="tag project-tag-tech">QA Testing</span>
+            <span class="tag project-tag-tech">Web & Mobile</span>
+            <!-- <span class="tag project-tag-tech">Togo Digital</span> -->
+          </div>
+          <h3 class="project-title">Tests QA - Agence Togo Digital</h3>
+          <p class="project-desc">Tests fonctionnels et techniques sur les applications web et les services digitals gouvernemetaux: Rédaction de rapports détaillés, identification de bugs critiques, collaboration avec les équipes dev pour la résolution.</p>
+          <p class="project-role"><strong>Mon rôle :</strong> QA Tester - cas de test, rapports techniques, priorisation des anomalies.</p>
+          <div class="project-links">
+            <a href="#contact" class="project-link">📩 En savoir plus</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- EXPERIENCE -->
+<section id="experience" style="background: var(--bg2); border-top: 1px solid var(--border);">
+  <div class="section-inner">
+    <div class="section-header fade-up">
+      <span class="section-tag">Expériences</span>
+      <h2 class="section-title">Mon parcours professionnel</h2>
+    </div>
+    <div class="exp-tabs fade-up">
+      <button class="exp-tab active" data-panel="tech">💻 Développement & Tech</button>
+      <button class="exp-tab" data-panel="events">🎤 Événementiel</button>
+      <button class="exp-tab" data-panel="other">🌍 Entrepreneuriat</button>
+    </div>
+    <div class="exp-panel active" id="panel-tech">
+      <div class="timeline">
+        <div class="timeline-item fade-up">
+          <div class="timeline-dot gold"></div>
+          <div class="tl-date">JUIN 2026</div>
+          <div class="tl-title">1ère Place - INTELLO 2026</div>
+          <div class="tl-company">Lomé Business School - Concours d'Innovation (44 équipes)</div>
+          <ul class="tl-list">
+            <li>Direction d'une équipe multidisciplinaire de 10 membres sur un projet agri-tech</li>
+            <li>Conception du prototype Mon Jardin : agriculture verticale low-tech avec bambou local et irrigation par gravité</li>
+            <li>Élaboration du modèle économique, étude de marché, pitch devant jury professionnel</li>
+            <li>Financement obtenu : 500 000 FCFA pour la phase pilote</li>
+          </ul>
+        </div>
+
+        <div class="timeline-item fade-up">
+          <div class="timeline-dot"></div>
+          <div class="tl-date">FÉV 2025</div>
+          <div class="tl-title">Projet Archipel - Infrastructure LAN</div>
+          <div class="tl-company">Hackathon "La Piscine" - Lomé Business School</div>
+          <ul class="tl-list">
+            <li>Conception et implémentation d'une infrastructure réseau local (LAN) sans Internet</li>
+            <li>Configuration de la communication peer-to-peer entre machines</li>
+            <li>Méthodologie Agile : sprints, revues de code, coordination d'équipe</li>
+          </ul>
+        </div>
+
+        <div class="timeline-item fade-up">
+          <div class="timeline-dot"></div>
+          <div class="tl-date">NOV 2024 - JAN 2025</div>
+          <div class="tl-title">Plateforme de Crowdfunding</div>
+          <div class="tl-company">Projet Étudiant - Lomé Business School</div>
+          <ul class="tl-list">
+            <li>Développement backend complet avec Django (Python) : routes, contrôleurs, modèles de données</li>
+            <li>Système d'authentification sécurisé (inscription, connexion, sessions)</li>
+            <li>Suivi des contributions en temps réel pour la traçabilité des transactions</li>
+          </ul>
+        </div>
+        <div class="timeline-item fade-up">
+          <div class="timeline-dot"></div>
+          <div class="tl-date">DÉC 2024 - JAN 2025</div>
+          <div class="tl-title">Testeur Fonctionnel et Technique</div>
+          <div class="tl-company">Agence Togo Digital</div>
+          <ul class="tl-list">
+            <li>Tests d'assurance qualité sur applications web et mobiles en cours de développement</li>
+            <li>Rédaction de rapports techniques détaillés (bugs, cas de test, résultats)</li>
+            <li>Collaboration avec équipes dev pour prioriser et résoudre les anomalies</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="exp-panel" id="panel-events">
+      <div class="timeline">
+        <div class="timeline-item fade-up">
+          <div class="timeline-dot gold"></div>
+          <div class="tl-date">MARS 2026</div>
+          <div class="tl-title">Hôtesse d'Accueil Évènementielle</div>
+          <div class="tl-company">Évènement BimCity - Lomé, Togo</div>
+          <ul class="tl-list">
+            <li>Accueil et orientation des invités avec professionnalisme et bienveillance</li>
+            <li>Vérification des accréditations et gestion ordonnée des flux de visiteurs</li>
+            <li>Représentation positive de l'image de l'organisateur</li>
+          </ul>
+        </div>
+        <!-- <div class="timeline-item fade-up">
+          <div class="timeline-dot gold"></div>
+          <div class="tl-date">JUIN 2026</div>
+          <div class="tl-title">Hôtesse Officielle - INTELLO 2026</div>
+          <div class="tl-company">Lomé Business School</div>
+          <ul class="tl-list">
+            <li>Représentation soignée de l'image de l'école devant les participants</li>
+            <li>Gestion des listes d'invités et coordination à l'entrée</li>
+            <li>Remise des prix aux gagnants de toutes les catégories</li>
+            <li>Communication bilingue français/anglais avec participants variés</li>
+          </ul>
+        </div> -->
+        <div class="timeline-item fade-up">
+          <div class="timeline-dot"></div>
+          <div class="tl-date">NOV 2024</div>
+          <div class="tl-title">Coordinatrice & Maîtresse de Cérémonie</div>
+          <div class="tl-company">Gala Dîner Tout Blanc</div>
+          <ul class="tl-list">
+            <li>Co-organisation complète : planification, logistique, coordination prestataires, budget</li>
+            <li>Animation de la soirée en tant que maîtresse de cérémonie</li>
+            <li>Encadrement et briefing des bénévoles mobilisés</li>
+            <li>Gestion protocole de table et aménagement de salle</li>
+          </ul>
+        </div>
+        <div class="timeline-item fade-up">
+          <div class="timeline-dot"></div>
+          <div class="tl-date">OCT - DÉC 2024</div>
+          <div class="tl-title">Coordinatrice d'Évènements</div>
+          <div class="tl-company">NBBC Solution - Lomé, Togo</div>
+          <ul class="tl-list">
+            <li>Planification et coordination de conférences professionnelles</li>
+            <li>Animation de micro-trottoir lors du Blockchain School Event devant un large public</li>
+            <li>Liaison entre partenaires, prestataires et équipes internes</li>
+            <li>Supervision des équipes terrain, fluidité logistique et respect des délais</li>
+          </ul>
+        </div>
+        <div class="timeline-item fade-up">
+          <div class="timeline-dot"></div>
+          <div class="tl-date">2025 - PRÉSENT</div>
+          <div class="tl-title">Hôtesse d'Accueil Professionnelle</div>
+          <div class="tl-company">Événements institutionnels, académiques & commerciaux</div>
+          <ul class="tl-list">
+            <li>Accueil des participants, orientation des invités, respect des protocoles</li>
+            <li>Représentation de marques dans des contextes formels et exigeants</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="exp-panel" id="panel-other">
+      <div class="timeline">
+        <div class="timeline-item fade-up">
+          <div class="timeline-dot gold"></div>
+          <div class="tl-date">2025 - PRÉSENT</div>
+          <div class="tl-title">Présidente du Club d'Art Oratoire</div>
+          <div class="tl-company">Lomé Business School</div>
+          <ul class="tl-list">
+            <li>Direction et animation du club d'art oratoire de l'école</li>
+            <li>Organisation de compétitions inter-étudiants et coaching des membres</li>
+            <li>Responsable de la catégorie Art Oratoire à INTELLO 2026</li>
+          </ul>
+        </div>
+        <div class="timeline-item fade-up">
+          <div class="timeline-dot"></div>
+          <div class="tl-date">2023 - PRÉSENT</div>
+          <div class="tl-title">Importatrice de Produits</div>
+          <div class="tl-company">Commerce International - Chine</div>
+          <ul class="tl-list">
+            <li>Recherche de fournisseurs et négociation commerciale internationale</li>
+            <li>Gestion des commandes, suivi logistique et coordination internationale</li>
+            <li>Développement d'une activité entrepreneuriale autonome</li>
+          </ul>
+        </div>
+        <!-- <div class="timeline-item fade-up">
+          <div class="timeline-dot"></div>
+          <div class="tl-date">JAN 2026</div>
+          <div class="tl-title">Formation Professionnelle</div>
+          <div class="tl-company">Tilda's Event Academy - Lomé</div>
+          <ul class="tl-list">
+            <li>Formation certifiante en hôtesse d'accueil événementiel</li>
+            <li>Protocole, accueil VIP, gestion de flux, présentation professionnelle</li>
+          </ul>
+        </div> -->
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FORMATION -->
+<section id="formation">
+  <div class="section-inner">
+    <div class="section-header fade-up">
+      <span class="section-tag">Formation</span>
+      <h2 class="section-title">Parcours académique</h2>
+    </div>
+    <div class="formation-grid">
+      <div class="formation-card fade-up">
+        <div class="formation-icon">🎓</div>
+        <div class="formation-degree">Bachelor 3 - Licence Systèmes d'Information</div>
+        <div class="formation-school">Lomé Business School</div>
+        <div class="formation-date">2023 - Présent (en cours)</div>
+      </div>
+      <div class="formation-card fade-up">
+        <div class="formation-icon">🏫</div>
+        <div class="formation-degree">Baccalauréat Scientifique - Série D</div>
+        <div class="formation-school">Lycée Djagblé, Togo</div>
+        <div class="formation-date">2022 - 2023</div>
+      </div>
+      <div class="formation-card fade-up">
+        <div class="formation-icon">🎤</div>
+        <div class="formation-degree">Formation Hôtesse d'Accueil Événementiel</div>
+        <div class="formation-school">Tilda's Event Academy</div>
+        <div class="formation-date">Janvier 2026 · Certification professionnelle</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CERTIFICATIONS -->
+<section id="certifications" style="background: var(--bg2); border-top: 1px solid var(--border);">
+  <div class="section-inner">
+    <div class="section-header fade-up">
+      <span class="section-tag">Certifications</span>
+      <h2 class="section-title">Reconnaissances & Objectifs</h2>
+    </div>
+    <div class="cert-grid">
+      <div class="cert-card fade-up">
+        <div class="cert-logo">🥇</div>
+        <div class="cert-info">
+          <div class="cert-name">1ère Place INTELLO 2026 <span class="cert-badge obtained">Obtenu</span></div>
+          <div class="cert-issuer">Lomé Business School · Juin 2026</div>
+          <div class="cert-skills">Innovation agri-tech · Leadership · Entrepreneuriat · Modèle économique</div>
+        </div>
+      </div>
+      <div class="cert-card fade-up">
+        <div class="cert-logo">🎤</div>
+        <div class="cert-info">
+          <div class="cert-name">Formation Hôtesse Événementielle <span class="cert-badge obtained">Obtenu</span></div>
+          <div class="cert-issuer">Tilda's Event Academy · Janvier 2026</div>
+          <div class="cert-skills">Protocole · Accueil VIP · Animation · Gestion de flux</div>
+        </div>
+      </div>
+      <div class="cert-card cert-planned fade-up">
+        <div class="cert-logo">☁️</div>
+        <div class="cert-info">
+          <div class="cert-name">AWS Cloud Practitioner <span class="cert-badge planned">En cours</span></div>
+          <div class="cert-issuer">Amazon Web Services</div>
+          <div class="cert-skills">Cloud, déploiement, sécurité, architectures cloud natives</div>
+        </div>
+      </div>
+      <div class="cert-card cert-planned fade-up">
+        <div class="cert-logo">🟢</div>
+        <div class="cert-info">
+          <div class="cert-name">Laravel Certified Developer <span class="cert-badge planned">En cours</span></div>
+          <div class="cert-issuer">Laravel Certification Program</div>
+          <div class="cert-skills">PHP, Eloquent ORM, Queues, APIs RESTful, architecture MVC</div>
+        </div>
+      </div>
+      <div class="cert-card cert-planned fade-up">
+        <div class="cert-logo">⚛️</div>
+        <div class="cert-info">
+          <div class="cert-name">Meta Back-End Developer <span class="cert-badge planned">Prévu</span></div>
+          <div class="cert-issuer">Meta / Coursera</div>
+          <div class="cert-skills">Django avancé, REST APIs, bases de données, CI/CD</div>
+        </div>
+      </div>
+      <div class="cert-card cert-planned fade-up">
+        <div class="cert-logo">📋</div>
+        <div class="cert-info">
+          <div class="cert-name">CAPM - PMI <span class="cert-badge planned">Prévu</span></div>
+          <div class="cert-issuer">Project Management Institute</div>
+          <div class="cert-skills">Gestion de projet, cycles de vie, processus PMI, communication</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<!-- <section class="testi-section">
+  <div class="section-inner">
+    <div class="section-header fade-up">
+      <span class="section-tag">Témoignages</span>
+      <h2 class="section-title">Ce qu'on dit de moi</h2>
+    </div>
+    <div class="testi-grid">
+      <div class="testi-card fade-up">
+        <div class="testi-quote">"</div>
+        <div class="testi-text">Winner a démontré une capacité remarquable à allier rigueur technique et leadership humain. Rare de voir une étudiante aussi investie, aussi bien dans le code que dans la gestion d'équipe.</div>
+        <div class="testi-author">
+          <div class="testi-avatar">BA</div>
+          <div>
+            <div class="testi-name">Boris Ameganvi</div>
+            <div class="testi-role">Référence académique · Lomé Business School</div>
+          </div>
+        </div>
+      </div>
+      <div class="testi-card fade-up">
+        <div class="testi-quote">"</div>
+        <div class="testi-text">Une coordinatrice qui anticipe, qui gère, et qui inspire. Winner a su tenir une équipe soudée sous pression tout en livrant un projet innovant. C'est le type de profil qui transforme les organisations.</div>
+        <div class="testi-author">
+          <div class="testi-avatar">JR</div>
+          <div>
+            <div class="testi-name">Juré INTELLO 2026</div>
+            <div class="testi-role">Professionnel de l'innovation - Lomé</div>
+          </div>
+        </div>
+      </div>
+      <div class="testi-card fade-up">
+        <div class="testi-quote">"</div>
+        <div class="testi-text">Votre recommandation ici - si vous avez travaillé avec Winner, contactez-la sur LinkedIn ou par email pour laisser un témoignage.</div>
+        <div class="testi-author">
+          <div class="testi-avatar">?</div>
+          <div>
+            <div class="testi-name">Votre nom ici</div>
+            <div class="testi-role">Votre rôle · Votre entreprise</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-GALLERY -->
+<!-- <section id="gallery">
+  <div class="section-inner">
+    <div class="section-header fade-up">
+      <span class="section-tag">Galerie</span>
+      <h2 class="section-title">Moments clés</h2>
+    </div>
+    <div class="gallery-grid fade-up">
+      <div class="gallery-item">
+        <span>🏆</span>
+        <div class="gallery-label">1ère Place INTELLO 2026 - Mon Jardin</div>
+      </div>
+      <div class="gallery-item"><span>🌱</span><div class="gallery-label">Prototype Mon Jardin</div></div>
+      <div class="gallery-item"><span>🎤</span><div class="gallery-label">Animation - Blockchain School Event</div></div>
+      <div class="gallery-item"><span>💻</span><div class="gallery-label">Développement - Plateforme Crowdfunding</div></div>
+      <div class="gallery-item"><span>🎉</span><div class="gallery-label">Gala Dîner Tout Blanc - MC</div></div>
+      <div class="gallery-item"><span>🌐</span><div class="gallery-label">Hackathon La Piscine - Projet Archipel</div></div>
+      <div class="gallery-item"><span>🎓</span><div class="gallery-label">Lomé Business School</div></div>
+    </div>
+    <p style="text-align:center;color:var(--text3);font-size:0.8rem;margin-top:1.5rem;">📸 Remplacez les icônes par vos vraies photos pour un effet maximal</p>
+  </div>
+</section> -->
+
+<!-- CONTACT -->
+<section id="contact" style="background: var(--bg2); border-top: 1px solid var(--border);">
+  <div class="section-inner">
+    <div class="section-header fade-up">
+      <span class="section-tag">Contact</span>
+      <h2 class="section-title">Travaillons ensemble</h2>
+    </div>
+    <div class="contact-grid fade-up">
+      <div class="contact-info">
+        <p>Disponible pour des opportunités de stage, collaboration ou projet freelance en développement web, gestion de projet ou coordination événementielle.</p>
+        <div class="contact-links">
+          <a href="mailto:agblegayawawinner@gmail.com" class="contact-link-item">
+            <div class="contact-link-icon">✉️</div>
+            <div class="contact-link-text">
+              <div class="cl-label">Email</div>
+              <div class="cl-value">agblegayawawinner@gmail.com</div>
+            </div>
+          </a>
+          <a href="tel:+22871110585" class="contact-link-item">
+            <div class="contact-link-icon">📞</div>
+            <div class="contact-link-text">
+              <div class="cl-label">Téléphone / WhatsApp</div>
+              <div class="cl-value">+228 71 11 05 85</div>
+            </div>
+          </a>
+          <a href="https://linkedin.com/in/VOTRE-PROFIL" class="contact-link-item" target="_blank">
+            <div class="contact-link-icon">in</div>
+            <div class="contact-link-text">
+              <div class="cl-label">LinkedIn</div>
+              <div class="cl-value">linkedin.com/in/VOTRE-PROFIL</div>
+            </div>
+          </a>
+          <a href="https://github.com/VOTRE-PSEUDO" class="contact-link-item" target="_blank">
+            <div class="contact-link-icon">⌥</div>
+            <div class="contact-link-text">
+              <div class="cl-label">GitHub</div>
+              <div class="cl-value">github.com/VOTRE-PSEUDO</div>
+            </div>
+          </a>
+          <div class="contact-link-item" style="cursor:default">
+            <div class="contact-link-icon">📍</div>
+            <div class="contact-link-text">
+              <div class="cl-label">Localisation</div>
+              <div class="cl-value">Djagblé, Lomé, Togo</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="contact-form-card">
+        <div class="form-title">Envoyer un message</div>
+        <div class="form-row">
+          <div class="form-group">
+            <label>Prénom & Nom</label>
+            <input type="text" placeholder="Jean Dupont">
+          </div>
+          <div class="form-group">
+            <label>Email</label>
+            <input type="email" placeholder="vous@exemple.com">
+          </div>
+        </div>
+        <div class="form-group">
+          <label>Sujet</label>
+          <select>
+            <option>Stage / Emploi</option>
+            <option>Projet collaboratif</option>
+            <option>Freelance</option>
+            <option>Événementiel</option>
+            <option>Autre</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label>Message</label>
+          <textarea placeholder="Décrivez votre projet ou votre opportunité..."></textarea>
+        </div>
+        <button class="form-submit" onclick="this.textContent='✅ Message envoyé !'; setTimeout(()=>this.textContent='Envoyer le message',3000)">Envoyer le message</button>
+      </div>
+    </div>
+  </div>
+</section> 
+
+<!-- FOOTER -->
+<footer>
+  <p>© 2026 <strong>Agblega Yawa Winner</strong> · Lomé, Togo · Développé avec ❤️ &amp;
+  <a href="mailto:agblegayawawinner@gmail.com">agblegayawawinner@gmail.com</a></p>
+</footer>
+
+<script>
+// THEME
+const themeBtn = document.getElementById('themeBtn');
+const body = document.body;
+themeBtn.addEventListener('click', () => {
+  body.classList.toggle('light-mode');
+  themeBtn.textContent = body.classList.contains('light-mode') ? '🌙' : '☀️';
+});
+
+// HAMBURGER
+const hamburger = document.getElementById('hamburger');
+const navLinks = document.getElementById('navLinks');
+hamburger.addEventListener('click', () => navLinks.classList.toggle('open'));
+
+// FADE UP OBSERVER
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(e => {
+    if (e.isIntersecting) { e.target.classList.add('visible'); }
+  });
+}, { threshold: 0.1 });
+document.querySelectorAll('.fade-up').forEach(el => observer.observe(el));
+
+// SKILL BARS
+const skillObserver = new IntersectionObserver((entries) => {
+  entries.forEach(e => {
+    if (e.isIntersecting) {
+      e.target.querySelectorAll('.skill-fill').forEach(bar => {
+        bar.style.width = bar.dataset.width;
+      });
+    }
+  });
+}, { threshold: 0.3 });
+document.querySelectorAll('.skills-card').forEach(el => skillObserver.observe(el));
+
+// COUNTERS
+const counterObserver = new IntersectionObserver((entries) => {
+  entries.forEach(e => {
+    if (e.isIntersecting) {
+      e.target.querySelectorAll('.counter').forEach(c => {
+        const target = +c.dataset.target;
+        let current = 0;
+        const step = Math.ceil(target / 40);
+        const timer = setInterval(() => {
+          current = Math.min(current + step, target);
+          c.textContent = current;
+          if (current >= target) clearInterval(timer);
+        }, 30);
+      });
+      counterObserver.unobserve(e.target);
+    }
+  });
+}, { threshold: 0.5 });
+document.querySelector('.stats-grid') && counterObserver.observe(document.querySelector('.stats-grid'));
+
+// EXP TABS
+document.querySelectorAll('.exp-tab').forEach(tab => {
+  tab.addEventListener('click', () => {
+    document.querySelectorAll('.exp-tab').forEach(t => t.classList.remove('active'));
+    document.querySelectorAll('.exp-panel').forEach(p => p.classList.remove('active'));
+    tab.classList.add('active');
+    document.getElementById('panel-' + tab.dataset.panel).classList.add('active');
+  });
+});
+
+// NAV SCROLL STYLE
+window.addEventListener('scroll', () => {
+  const nav = document.getElementById('navbar');
+  nav.style.borderBottomColor = window.scrollY > 50 ? 'var(--border2)' : 'var(--border)';
+});
+</script>
+</body>
+</html>
