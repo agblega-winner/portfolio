@@ -310,6 +310,9 @@ section { padding: 6rem 2rem; }
 .tl-list { list-style: none; }
 .tl-list li { font-size: 0.875rem; color: var(--text2); line-height: 1.6; padding: 0.2rem 0 0.2rem 1rem; position: relative; }
 .tl-list li::before { content: '→'; position: absolute; left: 0; color: var(--accent2); font-size: 0.75rem; top: 0.3rem; }
+.timeline-item-wrapper { display: grid; grid-template-columns: 1fr 250px; gap: 2rem; align-items: flex-start; }
+.timeline-item-image { border-radius: var(--radius); overflow: hidden; border: 1px solid var(--border); background: var(--bg3); aspect-ratio: 4/3; display: flex; align-items: center; justify-content: center; font-size: 2rem; color: var(--text3); }
+.timeline-item-image img { width: 100%; height: 100%; object-fit: cover; }
 
 /* ---- FORMATION ---- */
 .formation-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem; }
@@ -440,6 +443,8 @@ footer a { color: var(--accent2); text-decoration: none; }
   .gallery-grid { grid-template-columns: repeat(2, 1fr); }
   .gallery-item:first-child { grid-row: span 1; }
   .stat-item { border-right: none; border-bottom: 1px solid var(--border); }
+  .timeline-item-wrapper { grid-template-columns: 1fr; gap: 1rem; }
+  .timeline-item-image { max-height: 200px; }
   section { padding: 4rem 1.25rem; }
   .form-row { grid-template-columns: 1fr; }
 }
@@ -763,151 +768,195 @@ footer a { color: var(--accent2); text-decoration: none; }
     </div>
     <div class="exp-panel active" id="panel-tech">
       <div class="timeline">
-        <div class="timeline-item fade-up">
-          <div class="timeline-dot gold"></div>
-          <div class="tl-date">JUIN 2026</div>
-          <div class="tl-title">1ère Place - INTELLO 2026</div>
-          <div class="tl-company">Lomé Business School - Concours d'Innovation (44 équipes)</div>
-          <ul class="tl-list">
-            <li>Direction d'une équipe multidisciplinaire de 10 membres sur un projet agri-tech</li>
-            <li>Conception du prototype Mon Jardin : agriculture verticale low-tech avec bambou local et irrigation par gravité</li>
-            <li>Élaboration du modèle économique, étude de marché, pitch devant jury professionnel</li>
-            <li>Financement obtenu : 500 000 FCFA pour la phase pilote</li>
-          </ul>
+        <div class="timeline-item-wrapper fade-up">
+          <div class="timeline-item">
+            <div class="timeline-dot gold"></div>
+            <div class="tl-date">JUIN 2026</div>
+            <div class="tl-title">1ère Place - INTELLO 2026</div>
+            <div class="tl-company">Lomé Business School - Concours d'Innovation (44 équipes)</div>
+            <ul class="tl-list">
+              <li>Direction d'une équipe multidisciplinaire de 10 membres sur un projet agri-tech</li>
+              <li>Conception du prototype Mon Jardin : agriculture verticale low-tech avec bambou local et irrigation par gravité</li>
+              <li>Élaboration du modèle économique, étude de marché, pitch devant jury professionnel</li>
+              <li>Financement obtenu : 500 000 FCFA pour la phase pilote</li>
+            </ul>
+          </div>
+          <div class="timeline-item-image">
+            <!-- Remplacez par votre chemin image réel, ex: pic1.jpeg -->
+            <img src="pic2.jpeg" alt="Mon Jardin - INTELLO 2026">
+          </div>
         </div>
 
-        <div class="timeline-item fade-up">
-          <div class="timeline-dot"></div>
-          <div class="tl-date">FÉV 2025</div>
-          <div class="tl-title">Projet Archipel - Infrastructure LAN</div>
-          <div class="tl-company">Hackathon "La Piscine" - Lomé Business School</div>
-          <ul class="tl-list">
-            <li>Conception et implémentation d'une infrastructure réseau local (LAN) sans Internet</li>
-            <li>Configuration de la communication peer-to-peer entre machines</li>
-            <li>Méthodologie Agile : sprints, revues de code, coordination d'équipe</li>
-          </ul>
+        <div class="timeline-item-wrapper fade-up">
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="tl-date">FÉV 2026</div>
+            <div class="tl-title">Projet Archipel - Infrastructure LAN</div>
+            <div class="tl-company">Hackathon "La Piscine" - Lomé Business School</div>
+            <ul class="tl-list">
+              <li>Conception et implémentation d'une infrastructure réseau local (LAN) sans Internet</li>
+              <li>Configuration de la communication peer-to-peer entre machines</li>
+              <li>Méthodologie Agile : sprints, revues de code, coordination d'équipe</li>
+            </ul>
+          </div>
+          <div class="timeline-item-image">
+            <!-- Remplacez par votre chemin image réel, ex: pic2.jpeg -->
+            <img src="pic2.jpeg" alt="Projet Archipel">
+          </div>
         </div>
 
-        <div class="timeline-item fade-up">
-          <div class="timeline-dot"></div>
-          <div class="tl-date">NOV 2024 - JAN 2025</div>
-          <div class="tl-title">Plateforme de Crowdfunding</div>
-          <div class="tl-company">Projet Étudiant - Lomé Business School</div>
-          <ul class="tl-list">
-            <li>Développement backend complet avec Django (Python) : routes, contrôleurs, modèles de données</li>
-            <li>Système d'authentification sécurisé (inscription, connexion, sessions)</li>
-            <li>Suivi des contributions en temps réel pour la traçabilité des transactions</li>
-          </ul>
+        <div class="timeline-item-wrapper fade-up">
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="tl-date">NOV 2025 - JAN 2026</div>
+            <div class="tl-title">Plateforme de Crowdfunding</div>
+            <div class="tl-company">Projet Étudiant - Lomé Business School</div>
+            <ul class="tl-list">
+              <li>Développement backend complet avec Django (Python) : routes, contrôleurs, modèles de données</li>
+              <li>Système d'authentification sécurisé (inscription, connexion, sessions)</li>
+              <li>Suivi des contributions en temps réel pour la traçabilité des transactions</li>
+            </ul>
+          </div>
+          <div class="timeline-item-image">
+            <!-- Remplacez par votre chemin image réel, ex: pic3.jpeg -->
+            <img src="pic3.jpeg" alt="Plateforme Crowdfunding">
+          </div>
         </div>
-        <div class="timeline-item fade-up">
-          <div class="timeline-dot"></div>
-          <div class="tl-date">DÉC 2024 - JAN 2025</div>
-          <div class="tl-title">Testeur Fonctionnel et Technique</div>
-          <div class="tl-company">Agence Togo Digital</div>
-          <ul class="tl-list">
-            <li>Tests d'assurance qualité sur applications web et mobiles en cours de développement</li>
-            <li>Rédaction de rapports techniques détaillés (bugs, cas de test, résultats)</li>
-            <li>Collaboration avec équipes dev pour prioriser et résoudre les anomalies</li>
-          </ul>
+
+        <div class="timeline-item-wrapper fade-up">
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="tl-date">DÉC 2024 - JAN 2025</div>
+            <div class="tl-title">Testeur Fonctionnel et Technique</div>
+            <div class="tl-company">Agence Togo Digital</div>
+            <ul class="tl-list">
+              <li>Tests d'assurance qualité sur applications web et mobiles en cours de développement</li>
+              <li>Rédaction de rapports techniques détaillés (bugs, cas de test, résultats)</li>
+              <li>Collaboration avec équipes dev pour prioriser et résoudre les anomalies</li>
+            </ul>
+          </div>
+          <div class="timeline-item-image">
+            <!-- Remplacez par votre chemin image réel -->
+            <img src="atd.png" alt="QA Testing">
+          </div>
         </div>
       </div>
     </div>
     <div class="exp-panel" id="panel-events">
       <div class="timeline">
-        <div class="timeline-item fade-up">
-          <div class="timeline-dot gold"></div>
-          <div class="tl-date">MARS 2026</div>
-          <div class="tl-title" style="background:url('pic1.jpeg') center/cover;border-radius:50%;width:40px;height:40px;"></div>
-          <div class="tl-company">Évènement BimCity - Lomé, Togo</div>
-          <ul class="tl-list">
-            <li>Accueil et orientation des invités avec professionnalisme et bienveillance</li>
-            <li>Vérification des accréditations et gestion ordonnée des flux de visiteurs</li>
-            <li>Représentation positive de l'image de l'organisateur</li>
-          </ul>
+        <div class="timeline-item-wrapper fade-up">
+          <div class="timeline-item">
+            <div class="timeline-dot gold"></div>
+            <div class="tl-date">MARS 2026</div>
+            <div class="tl-title">Hôtesse d'Accueil - BimCity</div>
+            <div class="tl-company">Évènement BimCity - Lomé, Togo</div>
+            <ul class="tl-list">
+              <li>Accueil et orientation des invités avec professionnalisme et bienveillance</li>
+              <li>Vérification des accréditations et gestion ordonnée des flux de visiteurs</li>
+              <li>Représentation positive de l'image de l'organisateur</li>
+            </ul>
+          </div>
+          <div class="timeline-item-image">
+            <!-- Remplacez par votre chemin image réel -->
+            <img src="img-bimcity.jpeg" alt="BimCity Event">
+          </div>
         </div>
-        <!-- <div class="timeline-item fade-up">
-          <div class="timeline-dot gold"></div>
-          <div class="tl-date">JUIN 2026</div>
-          <div class="tl-title">Hôtesse Officielle - INTELLO 2026</div>
-          <div class="tl-company">Lomé Business School</div>
-          <ul class="tl-list">
-            <li>Représentation soignée de l'image de l'école devant les participants</li>
-            <li>Gestion des listes d'invités et coordination à l'entrée</li>
-            <li>Remise des prix aux gagnants de toutes les catégories</li>
-            <li>Communication bilingue français/anglais avec participants variés</li>
-          </ul>
-        </div> -->
-        <div class="timeline-item fade-up">
-          <div class="timeline-dot"></div>
-          <div class="tl-date">NOV 2024</div>
-          <div class="tl-title">Coordinatrice & Maîtresse de Cérémonie</div>
-          <div class="tl-company">Gala Dîner Tout Blanc</div>
-          <ul class="tl-list">
-            <li>Co-organisation complète : planification, logistique, coordination prestataires, budget</li>
-            <li>Animation de la soirée en tant que maîtresse de cérémonie</li>
-            <li>Encadrement et briefing des bénévoles mobilisés</li>
-            <li>Gestion protocole de table et aménagement de salle</li>
-          </ul>
+
+        <div class="timeline-item-wrapper fade-up">
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="tl-date">NOV 2024</div>
+            <div class="tl-title">Coordinatrice & Maîtresse de Cérémonie</div>
+            <div class="tl-company">Gala Dîner Tout Blanc</div>
+            <ul class="tl-list">
+              <li>Co-organisation complète : planification, logistique, coordination prestataires, budget</li>
+              <li>Animation de la soirée en tant que maîtresse de cérémonie</li>
+              <li>Encadrement et briefing des bénévoles mobilisés</li>
+              <li>Gestion protocole de table et aménagement de salle</li>
+            </ul>
+          </div>
+          <div class="timeline-item-image">
+            <!-- Remplacez par votre chemin image réel -->
+            <img src="img-gala.jpeg" alt="Gala Dîner Tout Blanc">
+          </div>
         </div>
-        <div class="timeline-item fade-up">
-          <div class="timeline-dot"></div>
-          <div class="tl-date">OCT - DÉC 2024</div>
-          <div class="tl-title">Coordinatrice d'Évènements</div>
-          <div class="tl-company">NBBC Solution - Lomé, Togo</div>
-          <ul class="tl-list">
-            <li>Planification et coordination de conférences professionnelles</li>
-            <li>Animation de micro-trottoir lors du Blockchain School Event devant un large public</li>
-            <li>Liaison entre partenaires, prestataires et équipes internes</li>
-            <li>Supervision des équipes terrain, fluidité logistique et respect des délais</li>
-          </ul>
+
+        <div class="timeline-item-wrapper fade-up">
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="tl-date">OCT - DÉC 2024</div>
+            <div class="tl-title">Coordinatrice d'Évènements</div>
+            <div class="tl-company">NBBC Solution - Lomé, Togo</div>
+            <ul class="tl-list">
+              <li>Planification et coordination de conférences professionnelles</li>
+              <li>Animation de micro-trottoir lors du Blockchain School Event devant un large public</li>
+              <li>Liaison entre partenaires, prestataires et équipes internes</li>
+              <li>Supervision des équipes terrain, fluidité logistique et respect des délais</li>
+            </ul>
+          </div>
+          <div class="timeline-item-image">
+            <!-- Remplacez par votre chemin image réel -->
+            <img src="img-nbbc.jpeg" alt="NBBC Solution Events">
+          </div>
         </div>
-        <div class="timeline-item fade-up">
-          <div class="timeline-dot"></div>
-          <div class="tl-date">2025 - PRÉSENT</div>
-          <div class="tl-title">Hôtesse d'Accueil Professionnelle</div>
-          <div class="tl-company">Événements institutionnels, académiques & commerciaux</div>
-          <ul class="tl-list">
-            <li>Accueil des participants, orientation des invités, respect des protocoles</li>
-            <li>Représentation de marques dans des contextes formels et exigeants</li>
-          </ul>
+
+        <div class="timeline-item-wrapper fade-up">
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="tl-date">2025 - PRÉSENT</div>
+            <div class="tl-title">Hôtesse d'Accueil Professionnelle</div>
+            <div class="tl-company">Événements institutionnels, académiques & commerciaux</div>
+            <ul class="tl-list">
+              <li>Accueil des participants, orientation des invités, respect des protocoles</li>
+              <li>Représentation de marques dans des contextes formels et exigeants</li>
+            </ul>
+          </div>
+          <div class="timeline-item-image">
+            <!-- Remplacez par votre chemin image réel -->
+            <img src="pic1.jpeg" alt="Hôtesse Accueil">
+          </div>
         </div>
       </div>
     </div>
     <div class="exp-panel" id="panel-other">
       <div class="timeline">
-        <div class="timeline-item fade-up">
-          <div class="timeline-dot gold"></div>
-          <div class="tl-date">2025 - PRÉSENT</div>
-          <div class="tl-title">Présidente du Club d'Art Oratoire</div>
-          <div class="tl-company">Lomé Business School</div>
-          <ul class="tl-list">
-            <li>Direction et animation du club d'art oratoire de l'école</li>
-            <li>Organisation de compétitions inter-étudiants et coaching des membres</li>
-            <li>Responsable de la catégorie Art Oratoire à INTELLO 2026</li>
-          </ul>
+        <div class="timeline-item-wrapper fade-up">
+          <div class="timeline-item">
+            <div class="timeline-dot gold"></div>
+            <div class="tl-date">2025 - PRÉSENT</div>
+            <div class="tl-title">Présidente du Club d'Art Oratoire</div>
+            <div class="tl-company">Lomé Business School</div>
+            <ul class="tl-list">
+              <li>Direction et animation du club d'art oratoire de l'école</li>
+              <li>Organisation de compétitions inter-étudiants et coaching des membres</li>
+              <li>Responsable de la catégorie Art Oratoire à INTELLO 2026</li>
+            </ul>
+          </div>
+          <div class="timeline-item-image">
+            <!-- Remplacez par votre chemin image réel -->
+            <img src="img-oratory.jpeg" alt="Club Art Oratoire">
+          </div>
         </div>
-        <div class="timeline-item fade-up">
-          <div class="timeline-dot"></div>
-          <div class="tl-date">2023 - PRÉSENT</div>
-          <div class="tl-title">Importatrice de Produits</div>
-          <div class="tl-company">Commerce International - Chine</div>
-          <ul class="tl-list">
-            <li>Recherche de fournisseurs et négociation commerciale internationale</li>
-            <li>Gestion des commandes, suivi logistique et coordination internationale</li>
-            <li>Développement d'une activité entrepreneuriale autonome</li>
-          </ul>
+
+        <div class="timeline-item-wrapper fade-up">
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="tl-date">2023 - PRÉSENT</div>
+            <div class="tl-title">Importatrice de Produits</div>
+            <div class="tl-company">Commerce International - Chine</div>
+            <ul class="tl-list">
+              <li>Recherche de fournisseurs et négociation commerciale internationale</li>
+              <li>Gestion des commandes, suivi logistique et coordination internationale</li>
+              <li>Développement d'une activité entrepreneuriale autonome</li>
+            </ul>
+          </div>
+          <div class="timeline-item-image">
+            <!-- Remplacez par votre chemin image réel -->
+            <img src="hina.jpg" alt="Commerce International">
+          </div>
         </div>
-        <!-- <div class="timeline-item fade-up">
-          <div class="timeline-dot"></div>
-          <div class="tl-date">JAN 2026</div>
-          <div class="tl-title">Formation Professionnelle</div>
-          <div class="tl-company">Tilda's Event Academy - Lomé</div>
-          <ul class="tl-list">
-            <li>Formation certifiante en hôtesse d'accueil événementiel</li>
-            <li>Protocole, accueil VIP, gestion de flux, présentation professionnelle</li>
-          </ul>
-        </div> -->
       </div>
+    </div>
     </div>
   </div>
 </section>
@@ -919,24 +968,50 @@ footer a { color: var(--accent2); text-decoration: none; }
       <span class="section-tag">Formation</span>
       <h2 class="section-title">Parcours académique</h2>
     </div>
-    <div class="formation-grid">
-      <div class="formation-card fade-up">
-        <div class="formation-icon">🎓</div>
-        <div class="formation-degree">Bachelor 3 - Licence Systèmes d'Information</div>
-        <div class="formation-school">Lomé Business School</div>
-        <div class="formation-date">2023 - Présent </div>
+    <div style="display: grid; gap: 2.5rem;">
+      <div class="timeline-item-wrapper fade-up">
+        <div>
+          <div style="margin-bottom: 1rem;">
+            <div style="font-size: 0.75rem; color: var(--text3); font-weight: 500; margin-bottom: 0.3rem; letter-spacing: 0.05em;">2023 - PRÉSENT</div>
+            <div style="font-size: 1.05rem; font-weight: 700; color: var(--text); margin-bottom: 0.15rem;">Bachelor 3 - Licence Systèmes d'Information</div>
+            <div style="font-size: 0.85rem; color: var(--accent2); font-weight: 500;">Lomé Business School</div>
+          </div>
+          <p style="font-size: 0.875rem; color: var(--text2); line-height: 1.6;">Formation complète en systèmes d'information avec focus sur développement web, gestion de projet, et entrepreneuriat digital.</p>
+        </div>
+        <div class="timeline-item-image">
+          <!-- Remplacez par votre chemin image réel (ex: photo du campus ou diplôme) -->
+          <img src="img-lbs.jpeg" alt="Lomé Business School">
+        </div>
       </div>
-      <div class="formation-card fade-up">
-        <div class="formation-icon">🏫</div>
-        <div class="formation-degree">Baccalauréat Scientifique - Série D</div>
-        <div class="formation-school">Lycée Djagblé, Togo</div>
-        <div class="formation-date">2022 - 2023</div>
+
+      <div class="timeline-item-wrapper fade-up">
+        <div>
+          <div style="margin-bottom: 1rem;">
+            <div style="font-size: 0.75rem; color: var(--text3); font-weight: 500; margin-bottom: 0.3rem; letter-spacing: 0.05em;">2022 - 2023</div>
+            <div style="font-size: 1.05rem; font-weight: 700; color: var(--text); margin-bottom: 0.15rem;">Baccalauréat Scientifique - Série D</div>
+            <div style="font-size: 0.85rem; color: var(--accent2); font-weight: 500;">Lycée Djagblé, Togo</div>
+          </div>
+          <p style="font-size: 0.875rem; color: var(--text2); line-height: 1.6;">Formation scientifique générale avec fondements en mathématiques, physique et sciences naturelles.</p>
+        </div>
+        <div class="timeline-item-image">
+          <!-- Remplacez par votre chemin image réel (ex: photo du lycée) -->
+          <img src="img-lycee.jpeg" alt="Lycée Djagblé">
+        </div>
       </div>
-      <div class="formation-card fade-up">
-        <div class="formation-icon"></div>
-        <div class="formation-degree">Formation Hôtesse d'Accueil Événementiel</div>
-        <div class="formation-school">Tilda's Event Academy</div>
-        <div class="formation-date">Janvier 2026 · Certification professionnelle</div>
+
+      <div class="timeline-item-wrapper fade-up">
+        <div>
+          <div style="margin-bottom: 1rem;">
+            <div style="font-size: 0.75rem; color: var(--text3); font-weight: 500; margin-bottom: 0.3rem; letter-spacing: 0.05em;">JANVIER 2026 · CERTIFICATION</div>
+            <div style="font-size: 1.05rem; font-weight: 700; color: var(--text); margin-bottom: 0.15rem;">Formation Hôtesse d'Accueil Événementiel</div>
+            <div style="font-size: 0.85rem; color: var(--accent2); font-weight: 500;">Tilda's Event Academy</div>
+          </div>
+          <p style="font-size: 0.875rem; color: var(--text2); line-height: 1.6;">Formation certifiante en protocole, gestion d'accueil VIP, présentation professionnelle et coordination d'événements.</p>
+        </div>
+        <div class="timeline-item-image">
+          <!-- Remplacez par votre chemin image réel (ex: photo de la formation) -->
+          <img src="img-tilda.jpeg" alt="Tilda's Event Academy">
+        </div>
       </div>
     </div>
   </div>
